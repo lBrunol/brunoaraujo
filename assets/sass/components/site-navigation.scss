@@ -1,0 +1,9 @@
+.site-navigation {
+  text-align: right;
+  ul {
+    display: inline-block;
+    > li {
+      display: inline-block;
+    }
+  }
+}

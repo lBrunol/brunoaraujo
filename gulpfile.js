@@ -6,7 +6,7 @@ const concat = require('gulp-concat');
 sass.compiler = require('node-sass');
 
 function css(){
-  return src('assets/sass/**/*.scss')
+  return src('assets/sass/style.scss')
         .pipe(sass().on('error', sass.logError))
         .pipe(minifyCSS())
         .pipe(concat('style.css'))
@@ -15,5 +15,5 @@ function css(){
 
 exports.css = css;
 exports.default = () => {
-  watch('assets/sass/**/*.scss', css);
+  watch('assets/sass/style.scss', css);
 };

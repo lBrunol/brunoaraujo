@@ -636,7 +636,7 @@ a:hover, a:active {
 /*--------------------------------------------------------------
 ## Menus
 --------------------------------------------------------------*/
-.main-navigation {
+/*.main-navigation {
 	clear: both;
 	display: block;
 	float: left;
@@ -688,12 +688,11 @@ a:hover, a:active {
 	text-decoration: none;
 }
 
-/* Small menu. */
 .menu-toggle,
 .main-navigation.toggled ul {
 	display: block;
 }
-
+*/
 @media screen and (min-width: 37.5em) {
 	.menu-toggle {
 		display: none;

@@ -121,6 +121,7 @@ add_action( 'widgets_init', 'brunoaraujo_widgets_init' );
  */
 function brunoaraujo_scripts() {
 	wp_enqueue_style( 'brunoaraujo-style', get_stylesheet_uri() );
+	wp_enqueue_style( 'brunoaraujo-custom-style',  get_template_directory_uri() . '/build/css/style.css');
 
 	wp_enqueue_script( 'brunoaraujo-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
