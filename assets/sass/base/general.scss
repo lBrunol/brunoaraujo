@@ -6,6 +6,11 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: #222;
+  color: #fff;
+}
+
 a {
   text-decoration: none;
 }
@@ -36,4 +41,7 @@ h3 {
 }
 h4 {
   font-size: 1.2rem;
+}
+p {
+  margin-bottom: 1rem;
 }
