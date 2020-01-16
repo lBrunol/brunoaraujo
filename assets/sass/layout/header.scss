@@ -15,4 +15,27 @@
   .main-navigation {
     flex-grow: 2;
   }
+
+  @media (max-width: 640px){
+    .logo-header {
+      display: none;
+    }
+    .title-header {
+      padding: 10px 0;
+    }
+  }
+  @media (max-width: 480px){
+    flex-direction: column;
+    
+    .title-header,
+    .main-navigation {
+      width: 100%;
+      flex-grow: 1;
+      flex-direction: row;
+      justify-content: center;
+    }
+    .site-navigation {
+      text-align: center;
+    }
+  }
 }
