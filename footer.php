@@ -12,23 +12,15 @@
 ?>
 
 	</div><!-- #content -->
-
 	<footer id="colophon" class="site-footer">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'brunoaraujo' ) ); ?>">
-				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'brunoaraujo' ), 'WordPress' );
-				?>
-			</a>
-			<span class="sep"> | </span>
-				<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'brunoaraujo' ), 'brunoaraujo', '<a href="http://underscores.me/">Underscores.me</a>' );
-				?>
-		</div><!-- .site-info -->
-	</footer><!-- #colophon -->
-</div><!-- #page -->
+		<ul class="social-list">
+			<li><a target="_blank" href="https://github.com/lbrunol"><i class="icon-github-circled"></i></a></li>
+			<li><a target="_blank" href="https://www.facebook.com/bruno.araujo.108"><i class="icon-facebook-squared"></i></a></li>
+			<li><a target="_blank" href="https://twitter.com/lbruno_alvesl"><i class="icon-twitter"></i></a></li>
+			<li><a target="_blank" href="https://www.linkedin.com/in/bruno-ara%C3%BAjo-82550199/"><i class="icon-linkedin-squared"></i></a></li>
+		</ul>
+	</footer>
+</div>
 
 <?php wp_footer(); ?>
 

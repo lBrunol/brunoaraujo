@@ -1,0 +1,26 @@
+.social-list {
+  text-align: center;
+  display: block;
+
+  li {
+    display: inline-block;
+    a {
+      color: $social-list-font-color;
+      transition: .2s all linear;
+
+      &:hover,
+      &:focus,
+      &:active {
+        color: #aaa;
+
+        i::before {          
+          transform: scale(1.1);
+        }
+      }
+
+      i {
+        font-size: 1.5rem;
+      }
+    }
+  } 
+}
