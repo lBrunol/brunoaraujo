@@ -1,0 +1,25 @@
+.tag-list {
+  li {
+    display: inline-block;
+    a {
+      margin-right: 5px;
+      color: $tag-list-font-color;
+      font-size: 0.8rem;
+      display: inline-block;
+
+      &:hover,
+      &:focus,
+      &:active {
+        color: $tag-list-font-color-hover;
+        cursor: pointer;
+        text-decoration: none;
+      }
+
+      &::before {
+        content: "•";
+        margin-right: 5px;
+        display: inline;
+      }
+    }
+  }
+}

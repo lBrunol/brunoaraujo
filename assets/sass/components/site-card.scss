@@ -1,0 +1,14 @@
+.site-card {
+  padding: 1rem;  
+  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.05);
+  
+  .card-title {
+    padding-bottom: 15px;
+    margin: 0;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  .card-content {
+    font-size: 1rem;
+  }
+}

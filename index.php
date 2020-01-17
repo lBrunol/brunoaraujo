@@ -35,6 +35,17 @@ get_header();
 		<?php
 			endif 
 		?>
+		<article class="site-card">
+			<ul class="tag-list">
+				<li><a>Item 1</a></li>
+				<li><a>Item 2</a></li>
+				<li><a>Item 3</a></li>
+				<li><a>Item 4</a></li>
+			</ul>
+			<h1 class="card-title">Artigo 1</h1>
+			<p class="card-content">Olá</p>
+			<a href="#">Site externo</a>
+		</article>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 

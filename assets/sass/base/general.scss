@@ -6,13 +6,17 @@
   box-sizing: border-box;
 }
 
-body {
-  background-color: #222;
-  color: #fff;
-}
-
 a {
   text-decoration: none;
+  color: rgb(0, 110, 255);
+  transition: .2s linear all;
+
+  &:focus,
+  &:active,
+  &:hover {
+    color: rgb(4, 77, 172);
+    text-decoration: underline;
+  }
 }
 
 ul, li {

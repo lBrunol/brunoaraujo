@@ -4,6 +4,11 @@
     display: inline-block;
     > li {
       display: inline-block;
+      a:hover,
+      a:focus,
+      a:active {
+        text-decoration: none;
+      }
     }
   }
 }
