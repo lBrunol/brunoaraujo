@@ -24,7 +24,12 @@ get_header();
 				'post_type' => 'page',
 				'numberposts' => 1	
 			];
+			$args_post = [
+				'post_type' => 'post',
+				'numberposts' => 3	
+			];
 			$arr_pages = get_posts($args);
+			$arr_last_posts = get_posts($args_post);
 
 			if(count($arr_pages) > 0) :
 				$page_apresentacao = array_shift($arr_pages); ?>
@@ -35,17 +40,30 @@ get_header();
 		<?php
 			endif 
 		?>
-		<article class="site-card">
-			<ul class="tag-list">
-				<li><a>Item 1</a></li>
-				<li><a>Item 2</a></li>
-				<li><a>Item 3</a></li>
-				<li><a>Item 4</a></li>
-			</ul>
-			<h1 class="card-title">Artigo 1</h1>
-			<p class="card-content">Olá</p>
-			<a href="#">Site externo</a>
-		</article>
+		<?php if(count($arr_last_posts) > 0) : ?>
+			<h3>Últimos posts</h3>
+			<?php foreach($arr_last_posts as $last_post) :
+					$last_post_tags = get_the_tags($last_post->ID);
+					$date
+		?>
+					<article class="site-card">
+						<p class="card-date"><?php echo date_format(new DateTime($last_post->post_date), 'd-m-Y') ?></p>
+						<a href="<?php echo get_permalink($last_post) ?>"><h1 class="card-title"><?php echo $last_post->post_title ?></h1></a>
+						<p class="card-content"><?php echo get_the_excerpt($last_post) ?></p>
+						<a href="<?php echo get_permalink($last_post) ?>" class="card-link">Ler mais</a>
+						<?php if(count($last_post_tags) > 0) : ?>
+							<ul class="tag-list">
+								<?php foreach($last_post_tags as $last_post_tag) : ?>
+									<li><a href="#" target="_blank"><?php echo $last_post_tag->name ?></a></li>
+								<?php endforeach; ?>
+							</ul>
+						<?php	endif; ?>
+					</article>
+		<?php 
+				endforeach;
+			endif;
+		?>
+		
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
