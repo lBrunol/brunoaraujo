@@ -42,3 +42,19 @@
 .site-content {
   padding-bottom: 60px;
 }
+
+/** Lista de Posts internos **/
+.internal-postlist {
+  display: flex;
+  .site-card {
+    width: 33.33333%;
+    margin: 15px;
+
+    &:first-child {
+      margin-left: 0;
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
