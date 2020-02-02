@@ -36,7 +36,7 @@
 		the_content( sprintf(
 			wp_kses(
 				/* translators: %s: Name of current post. Only visible to screen readers */
-				__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'brunoaraujo' ),
+				__( 'Continue lendo<span class="screen-reader-text"> "%s"</span>', 'brunoaraujo' ),
 				array(
 					'span' => array(
 						'class' => array(),
@@ -55,5 +55,7 @@
 
 	<footer class="entry-footer">
 		<?php brunoaraujo_entry_footer(); ?>
+		<hr>
+		<?php brunoaraujo_posts_list(); ?>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-<?php the_ID(); ?> -->

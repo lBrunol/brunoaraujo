@@ -12,19 +12,19 @@ get_header();
 
 	<div id="primary" class="content-area container-small">
 		<main id="main" class="site-main">
-		<a href="#">Voltar na listagem</a>
+		<a href="#" class="back-link">← Voltar na listagem</a>
 		<?php
 		while ( have_posts() ) :
 			the_post();
 
 			get_template_part( 'template-parts/content', get_post_type() );
 
-			the_post_navigation();
+			//the_post_navigation();
 		endwhile; // End of the loop.
 		?>
 
-		</main><!-- #main -->
-	</div><!-- #primary -->
+		</main>
+	</div>
 
 <?php
 get_footer();
